@@ -1,0 +1,40 @@
+@import '../../styles.scss';
+
+.footer-1 {
+  padding: 30px;
+  background-color: $gray;
+  box-sizing: border-box;
+
+  .content {
+    padding: 0px 15px;
+    width: 25%;
+  }
+}
+
+.footer-2 {
+  background-color: $blue;
+  color: white;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'TATSanaChon';
+
+  .content {
+    padding: .5rem 1rem;
+    align-self: center;
+    width: 25%;
+  }
+}
+
+.logo {
+  width: 108px;
+}
+
+.title {
+  color: $red;
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+.detail {
+  font-size: 14px;
+}

@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'TATSanaChon';
+  src: url('/assets/fonts/TATSanaChon-Regular.woff2') format('woff2');
+  src: url('/assets/fonts/TATSanaChon-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'TATSanaSuksa';
+  src: url('/assets/fonts/TATSanaSuksa-Regular.woff2') format('woff2');
+}
+
+$gray: #FAFAFA;
+$blue: #213A8F;
+$red:#E6332A;
+$black: #333333;
+
+body {
+  margin: 0;
+  font-family: 'TATSanaSuksa';
+  color: $black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 1040px;
+  margin: 0 auto;
+}

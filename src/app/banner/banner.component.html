@@ -1,0 +1,6 @@
+<div class="banner">
+  <img class="logo" src="assets/img/logo/banner.png" />
+  <div class="banner-image" *ngFor="let banner of banners">
+    <div class="image" [ngStyle]="getBannerStyle(banner)"></div>
+  </div>
+</div>

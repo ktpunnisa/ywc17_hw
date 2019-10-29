@@ -1,0 +1,19 @@
+<div class="footer-1">
+  <div class="container">
+    <div class="content">
+      <img class="logo" src="assets/img/logo/footer.png" />
+    </div>
+    <div class="content" *ngFor="let footer of footer1">
+      <div class="title">{{ footer.title }}</div>
+      <div class="detail">{{ footer.detail }}</div>
+      <div class="detail">{{ footer.contact }}</div>
+    </div>
+  </div>
+</div>
+<div class="footer-2">
+  <div class="container">
+    <div class="content" *ngFor="let footer of footer2">
+      {{ footer }}
+    </div>
+  </div>
+</div>
