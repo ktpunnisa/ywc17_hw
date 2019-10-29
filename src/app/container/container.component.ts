@@ -14,18 +14,10 @@ export class ContainerComponent implements OnInit {
 
   constructor(private chimShopChaiService: ChimShopChaiService) {}
 
-  ngOnInit() {
-    this.getChimShopChai();
-  }
+  ngOnInit() {}
 
   get chimShopChai() {
     return this.chimShopChaiService.chimShopChai;
-  }
-
-  getChimShopChai() {
-    this.chimShopChaiService.getChimShopChai().subscribe(res => {
-      this.chimShopChaiService.chimShopChai = res;
-    });
   }
 
   getImg(img, path) {

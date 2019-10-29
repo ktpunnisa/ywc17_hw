@@ -3,6 +3,7 @@
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .duration {
@@ -66,7 +67,7 @@
   justify-content: space-around;
   margin-bottom: 100px;
 
-  .brand-logo {
+  .item {
     width: 100%;
     max-width: 102px;
   }
@@ -79,7 +80,56 @@
   margin-bottom: 150px;
 
   .banner-sq {
+    align-self: center;
+  }
+
+  .item {
     width: 100%;
     max-width: 350px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .duration {
+    .time {
+      font-size: 32px;
+    }
+  }
+
+  .register {
+    font-size: 18px;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .chimShopChai-description {
+    width: 100%;
+
+    .detail {
+      font-size: 24px;
+    }
+  }
+
+  .banner-display {
+    flex-direction: column;
+    margin-bottom: 60px;
+
+  }
+
+  .brand-display {
+    flex-wrap: wrap;
+
+    .brand-logo {
+      width: 32%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .item {
+      width: 80%;
+    }
   }
 }

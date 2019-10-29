@@ -8,11 +8,16 @@ import { ChimShopChai } from '../chim-shop-chai';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  isOpen = false;
   constructor(private chimShopChaiService: ChimShopChaiService) {}
 
   ngOnInit() {}
 
   get navbarItems() {
     return this.chimShopChaiService.getNavbarItems();
+  }
+
+  toggle() {
+    this.isOpen = !this.isOpen;
   }
 }

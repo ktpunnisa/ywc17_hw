@@ -10,7 +10,7 @@
   </a>
   <div class="chimShopChai-description">
     <p class="detail">
-      มาตรการส่งเสริมการบริโภค <br />ในประเทศ <span class="nowrap">“ชิมช้อปใช้”</span>
+      มาตรการส่งเสริมการบริโภค <br class="br" />ในประเทศ <span class="nowrap">“ชิมช้อปใช้”</span>
     </p>
     <div [innerHTML]="chimShopChai.detail"></div>
     <p class="condition">เงื่อนไขการเข้าร่วมมาตรการ</p>
@@ -18,13 +18,13 @@
   </div>
 
   <div class="banner-display">
-    <div *ngFor="let bannerSq of bannerSqs">
-      <img class="banner-sq" src="{{ getImg(bannerSq, bannerSqPath) }}" />
+    <div class="banner-sq" *ngFor="let bannerSq of bannerSqs">
+      <img class="item" src="{{ getImg(bannerSq, bannerSqPath) }}" />
     </div>
   </div>
   <div class="brand-display">
-    <div *ngFor="let brand of brands">
-      <img class="brand-logo" src="{{ getImg(brand, brandPath) }}" />
+    <div class="brand-logo" *ngFor="let brand of brands">
+      <img class="item" src="{{ getImg(brand, brandPath) }}" />
     </div>
   </div>
 </div>
