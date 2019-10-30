@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: 'TATSanaChon';
-  src: url('/assets/fonts/TATSanaChon-Regular.woff2') format('woff2');
-  src: url('/assets/fonts/TATSanaChon-Bold.woff2') format('woff2');
+  src: url('~src/assets/fonts/TATSanaChon-Regular.woff2') format('woff2');
+  src: url('~src/assets/fonts/TATSanaChon-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'TATSanaSuksa';
-  src: url('/assets/fonts/TATSanaSuksa-Regular.woff2') format('woff2');
+  src: url('~src/assets/fonts/TATSanaSuksa-Regular.woff2') format('woff2');
 }
 
 $gray: #FAFAFA;

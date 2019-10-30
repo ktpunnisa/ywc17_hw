@@ -2,10 +2,10 @@
   <img class="logo" src="assets/img/logo/footer.png" />
   <div class="navbar">
     <div *ngFor="let item of navbarItems">
-      <a [href]="item.href" [className]="isOpen && 'open'">{{ item.label }}</a>
+      <a [href]="item.href" [ngClass]="{ open: isOpen }">{{ item.label }}</a>
     </div>
   </div>
-  <div id="nav-icon" (click)="toggle()" [className]="isOpen && 'open'">
+  <div id="nav-icon" (click)="toggle()" [ngClass]="{ open: isOpen }">
     <span></span>
     <span></span>
     <span></span>

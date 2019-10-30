@@ -1,7 +1,9 @@
 <div class="container content">
   <div class="duration">
     <div>ตั้งแต่วันที่</div>
-    <div class="time">{{ chimShopChai.duration }}</div>
+    <div class="time" *ngIf="chimShopChai">
+      {{ chimShopChai.duration }}
+    </div>
   </div>
   <a class="register" href="https://www.xn--b3caa1e2a7e2b0h2be.com/close.html">
     <div>ลงทะเบียน เฟส 2</div>
@@ -12,9 +14,9 @@
     <p class="detail">
       มาตรการส่งเสริมการบริโภค <br class="br" />ในประเทศ <span class="nowrap">“ชิมช้อปใช้”</span>
     </p>
-    <div [innerHTML]="chimShopChai.detail"></div>
+    <div *ngIf="chimShopChai" [innerHTML]="chimShopChai.detail"></div>
     <p class="condition">เงื่อนไขการเข้าร่วมมาตรการ</p>
-    <div [innerHTML]="chimShopChai.condition"></div>
+    <div *ngIf="chimShopChai" [innerHTML]="chimShopChai.condition"></div>
   </div>
 
   <div class="banner-display">

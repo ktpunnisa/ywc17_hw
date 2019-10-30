@@ -38,6 +38,6 @@ export class ChimShopChaiService {
   }
 
   getNavbarItems() {
-    return this.chimShopChai ? this.chimShopChai.navbarItems : null;
+    return this.chimShopChai ? this.chimShopChai.navbarItems : [];
   }
 }
